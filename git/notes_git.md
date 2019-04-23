@@ -1,7 +1,7 @@
 # Git and Version Control
 
 ### VCS - Version Control System
-- allows develoeprs to work on a project simulataneously
+- allows developers to work on a project simultaneously
 - Does not allow overwriting each other's changes
 - Maintains a history of every version
 
@@ -18,7 +18,7 @@
 - **Working Directory**
   - In short, your project directory
 - **Staging area**
-  - a place where files are ready to be commited into repository
+  - a place where files are ready to be committed into repository
   - why have staging? you may only want to commit certain files into the repository.
 - **repository**
   - where all the history(commits, branches) of the project is stored.
@@ -36,7 +36,7 @@
 - `git checkout <SHA>` go back to a specific commit
 - `git diff <file_1> <fille_2>` see the differences between two files
 
-### Project Managemebt and Collabration
+### Project Management and Collaboration
 
 #### Git Branch
 - Usually branch is used so different people can work on different features without impacting each other
@@ -46,7 +46,7 @@
 
 
 
-### Branch and Collabration Commands
+### Branch and Collaboration Commands
 - `git clone <url>` clone a remote repository
 - `git push`
 - `git pull`
