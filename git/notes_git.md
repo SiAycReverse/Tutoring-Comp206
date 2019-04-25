@@ -11,8 +11,7 @@
 3. You perform commit operation that moves the files from the staging area. It creates a commit history and to the Git repository.
 4. You perform a push operation, you local repository data is pushed to remote repository.
 
-![basic-git-operation](./basic_git_operation.png)
-
+<img src="./basic_git_operation.png" width="350">
 ### Git Basic Explain
 
 - **Working Directory**
@@ -42,7 +41,7 @@
 - Usually branch is used so different people can work on different features without impacting each other
 - A branch represents an independent line of development
 - **working branch** - current branch you are working on. You can assume each branch has its own working directory (even they all use the same directory on your computer)
-![git-branch](./git-branch.svg)
+<img src="./git-branch.svg" width="550">
 
 
 
