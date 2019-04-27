@@ -1,10 +1,15 @@
 # The C Programming Language
 
-Online C IDE: https://repl.it/@JiajunChen1/RegularHalfDeletion
+Online C IDE: <https://repl.it/@JiajunChen1/>
+C code snippts: <https://www.sanfoundry.com/c-interview-questions-answers/>
+RegularHalfDeletion
+
 ### C Basic
---- skipped ---
+
+\--- skipped ---
 
 ### Pointers
+
 Variables that stores the memory address of another variable
 
 ```C
@@ -38,21 +43,21 @@ int main() {
 
     // more in pointer.c **
 }
-
 ```
 
 ### Strings in C
 
 `char *p = "my name is bob"`
 
-- The p is a variable pointer
-  - The p points to the first character (in this case ‘m’)
-- The “my name is bob” is a static constant value
-  - cannot be edited
-  - cannot be written over
-- `<string.h>`
-  - string library for C
-  - Please know how to use them
+-   The p is a variable pointer
+    -   The p points to the first character (in this case ‘m’)
+-   The “my name is bob” is a static constant value
+    -   cannot be edited
+    -   cannot be written over
+-   `<string.h>`
+    -   string library for C
+    -   Please know how to use them
+
 ```C
 // Common string.h functions
 strcmp()
@@ -70,7 +75,6 @@ printf("%s", (p+2)); // what is printed out?
 q = &array[5]; // since we are not pointing to the first cell
 printf("%s", q); // what is printed out?
 ```
-
 
 ```C
 #include <stdio.h>
@@ -101,11 +105,13 @@ int main () {
 ```
 
 ### Struct and Union
-- like OOP in Java (well, not really)
-- Is it possible to do inheritance using struct?
-  - Yes, let us do it together
+
+-   like OOP in Java (well, not really)
+-   Is it possible to do inheritance using struct?
+    -   Yes, let us do it together
 
 ###### Code example
+
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -251,33 +257,33 @@ void printBook( struct Books *book ) {
 ```
 
 ### Dynamic Memory
-- Create data structures on the fly (while program is running)
-  1. At compile-time define the data structure type
-  2. At run-time ask the system for memory formatted according to your defined data structure type
-  3. If the system returns NULL then it was not successful
-  4. When you are finished using the data structure return the memory back to the system
 
-```
-#include <stdlib.h>
-void *malloc(int size);
-  - Creates one data structure of ‘size’
-void *calloc(int multiples, int size)
-  - Creates an array of data structures of type ‘size’
-free(void *)
-  - Returns the data structure’s memory
-```
+-   Create data structures on the fly (while program is running)
+    1.  At compile-time define the data structure type
+    2.  At run-time ask the system for memory formatted according to your defined data structure type
+    3.  If the system returns NULL then it was not successful
+    4.  When you are finished using the data structure return the memory back to the system
+
+
+    #include <stdlib.h>
+    void *malloc(int size);
+      - Creates one data structure of ‘size’
+    void *calloc(int multiples, int size)
+      - Creates an array of data structures of type ‘size’
+    free(void *)
+      - Returns the data structure’s memory
 
 ### C Pre-processor and Modular Programming
 
 ##### Common C Pre-Processor
-```
-#include
-#define
-#ifdef
-#else
-#endif
-#ifndef
-```
+
+    #include
+    #define
+    #ifdef
+    #else
+    #endif
+    #ifndef
+
 ```C
 #include <stdio.h>
 
@@ -294,10 +300,39 @@ int main() {
   putchar(EOF);
   return 0;
 }
-
 ```
-### * void pointer
-- Pointe which can literally points to anything (variables, structs, array, strings, functions, poitners....)
-- https://www.geeksforgeeks.org/void-pointer-c-cpp/
-- http://www.circuitstoday.com/void-pointers-in-c
-- https://stackoverflow.com/questions/11626786/what-does-void-mean-and-how-to-use-it
+
+### C file operations
+
+    File handling functions
+    Description
+    fopen ()  function creates a new file or opens an existing file.
+    fclose ()	function closes an opened file.
+    getw ()	  function reads an integer from file.
+    putw ()	functions writes an integer to file.
+    fgetc ()	 function reads a character from file.
+    fputc ()	functions write a character to file.
+    gets ()	function reads line from keyboard.
+    puts ()	function writes line to o/p screen.
+    fgets() function reads string from a file, one line at a time.
+    fputs ()	function writes string to a file.
+    feof ()	 function finds end of file.
+    fgetchar ()	function reads a character from keyboard.
+    fprintf ()	function writes formatted data to a file.
+    fscanf ()	 function reads formatted data from a file.
+    fputchar ()	function writes a character onto the output screen from keyboard input.
+    getc ()	 function reads character from file.
+    getch ()	 function reads character from keyboard.
+    getche ()	function reads character from keyboard and echoes to o/p screen.
+    getchar ()	 function reads character from keyboard.
+    putc ()	function writes a character to file.
+    putchar ()	 function writes a character to screen.
+    scanf() function reads formatted data from keyboard.
+    remove ()	 function deletes a file.
+
+### \* void pointer
+
+-   Pointe which can literally points to anything (variables, structs, array, strings, functions, poitners....)
+-   <https://www.geeksforgeeks.org/void-pointer-c-cpp/>
+-   <http://www.circuitstoday.com/void-pointers-in-c>
+-   <https://stackoverflow.com/questions/11626786/what-does-void-mean-and-how-to-use-it>
